@@ -22,12 +22,22 @@
 
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 body {
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 [dir="rtl"] body {
   font-family: 'Estedad', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }

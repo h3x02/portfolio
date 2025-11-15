@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
 import TextType from './bit/TextType';
 import LightRays from './bit/LightRays';
+import { ChevronDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const { language } = useLanguage();
@@ -68,7 +69,7 @@ const Hero: React.FC = () => {
           >
             <TextType
               text={['سلام من محمدامین سیدی هستم']}
-              typingSpeed={100}
+              typingSpeed={60}
               deletingSpeed={50}
               pauseDuration={0}
               loop={false}
@@ -130,7 +131,7 @@ const Hero: React.FC = () => {
               text={[
                 '۵ سال تجربه در توسعه وب | متخصص در ساخت وب‌سایت‌های مدرن و کاربردی',
               ]}
-              typingSpeed={80}
+              typingSpeed={60}
               deletingSpeed={50}
               pauseDuration={0}
               loop={false}
@@ -188,6 +189,16 @@ const Hero: React.FC = () => {
           </motion.div>
         )}
 
+      </div>
+
+      {/* Bouncing Scroll Arrow */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+        >
+          <ChevronDown className="h-8 w-8 text-white" />
+        </motion.div>
       </div>
     </section>
   );

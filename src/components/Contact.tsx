@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
       icon: MessageCircle,
       label: 'واتس اپ',
       value: 'پیام دهید',
-      href: 'https://wa.me/981234567890',
+      href: 'https://wa.me/989104056429',
       color: 'from-purple-500 to-pink-500'
     }
   ];
@@ -54,9 +54,10 @@ const Contact: React.FC = () => {
           className="max-w-4xl mx-auto"
         >
           <div className="text-center mb-12">
-            <p className={`text-lg text-gray-300 mb-8 leading-relaxed 'font-estedad'`}>
-              اگر نیاز به وب‌سایت دارید، من می‌توانم هر نوع وب‌سایتی برای شما بسازم. از وب‌سایت‌های ساده گرفته تا اپلیکیشن‌های پیچیده وب.
+            <p className="text-lg text-gray-300 mb-8 leading-relaxed font-estedad">
+              اگر به دنبال همکاری برای توسعه یا بهبود وب‌سایت خود هستید، خوشحال می‌شوم در کنارتان باشم.
             </p>
+
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -111,8 +112,8 @@ const Contact: React.FC = () => {
                 <h3 className={`text-2xl md:text-3xl font-bold mb-4 'font-estedad'`}>
                   بیایید پروژه شما را شروع کنیم!
                 </h3>
-                <p className={`text-white/90 mb-8 max-w-2xl mx-auto text-lg font-estedad`}>
-                     هر ایده‌ای دارید، من می‌توانم آن را به واقعیت تبدیل کنم. همین امروز شروع کنیم!
+                <p className="text-white/90 mb-8 max-w-2xl mx-auto text-lg font-estedad">
+                  بیایید قدم اول را برداریم و چیزی بسازیم که به آن افتخار کنیم.
                 </p>
               </div>
             </div>

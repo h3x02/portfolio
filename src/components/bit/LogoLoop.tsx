@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useRef, useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
 
 export type LogoItem =
     | React.ReactNode
@@ -116,7 +115,7 @@ export const LogoLoop: React.FC<LogoLoopProps> = ({
         setCopyCount(Math.max(2, neededCopies))
     }
 
-    useResizeObserver([containerRef, seqRef], updateDimensions)
+    useResizeObserver([containerRef as React.RefObject<Element>, seqRef as React.RefObject<Element>], updateDimensions)
     useImageLoader(seqRef as React.RefObject<HTMLElement>, updateDimensions)
 
     // animation loop
@@ -157,7 +156,7 @@ export const LogoLoop: React.FC<LogoLoopProps> = ({
             return <li key={key}>{item}</li>
         }
 
-        if ('node' in item) {
+        if (typeof item === 'object' && item !== null && 'node' in item) {
             const content = item.node
             return (
                 <li key={key}>
@@ -172,7 +171,7 @@ export const LogoLoop: React.FC<LogoLoopProps> = ({
             )
         }
 
-        if ('src' in item) {
+        if (typeof item === 'object' && item !== null && 'src' in item) {
             return (
                 <li key={key}>
                     <a href={item.href} target="_blank" rel="noreferrer">

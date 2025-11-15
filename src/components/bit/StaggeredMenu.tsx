@@ -23,7 +23,6 @@ const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
     colors = ['#1e1e2e', '#312e81'],
     items = [],
     position = 'right',
-    isFixed = true,
     open = false,
     onMenuClose,
     showHeader = false,
