@@ -21,9 +21,9 @@ const Contact: React.FC = () => {
     },
     {
       icon: MessageCircle,
-      label: 'واتس اپ',
+      label: 'تلگرام',
       value: 'پیام دهید',
-      href: 'https://wa.me/989104056429',
+      href: 'https://t.me/h3x02',
       color: 'from-purple-500 to-pink-500'
     }
   ];

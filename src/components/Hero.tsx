@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
 import TextType from './bit/TextType';
-import LightRays from './bit/LightRays';
+import Antigravity from './Antigravity';
 import { ChevronDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
@@ -22,40 +22,26 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className={`relative min-h-screen flex items-center justify-center overflow-hidden`}
+      className={`relative min-h-screen flex items-center justify-center overflow-hidden bg-[#120F17]`}
     >
-      <LightRays
-        raysOrigin="top-center"
-        raysColor="#a855f7"
-        raysSpeed={0.5}
-        lightSpread={2}
-        rayLength={1.5}
-        pulsating={true}
-        fadeDistance={0.8}
-        saturation={0.8}
-        followMouse={true}
-        mouseInfluence={0.2}
-        noiseAmount={0.1}
-        distortion={0.05}
-        className="absolute inset-0"
-      />
-      <div className="absolute inset-0 bg-black">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(120,119,198,0.3),transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(168,85,247,0.2),transparent_50%)]"></div>
-      </div>
       <div className="absolute inset-0">
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1 h-1 bg-white/20 rounded-full animate-pulse"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${2 + Math.random() * 2}s`,
-            }}
-          />
-        ))}
+        <Antigravity
+          count={300}
+          magnetRadius={10}
+          ringRadius={10}
+          waveSpeed={0.7}
+          waveAmplitude={1}
+          particleSize={1.5}
+          lerpSpeed={0.1}
+          color="#F43F5E"
+          autoAnimate
+          particleVariance={1}
+          rotationSpeed={0}
+          depthFactor={1}
+          pulseSpeed={3}
+          particleShape="capsule"
+          fieldStrength={10}
+        />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center flex flex-col items-center">
