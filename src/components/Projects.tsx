@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../hooks/useLanguage';
 import { translations } from '../utils/translations';
-import { ExternalLink, Code, Shield } from 'lucide-react';
+import { ExternalLink, Code, Shield, Swords } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const { language, isRTL } = useLanguage();
@@ -11,7 +11,7 @@ const Projects: React.FC = () => {
     {
       titleKey: 'h3x3dTitle',
       descKey: 'h3x3dDesc',
-      link: 'https://isth3root.github.io/h3x-3d/',
+      link: 'https://h3x02.github.io/h3x-3d/',
       color: 'from-blue-500 to-purple-600',
       icon: Code,
       tech: ['React', 'Framer', 'Jest', 'GSAP']
@@ -19,10 +19,18 @@ const Projects: React.FC = () => {
     {
       titleKey: 'bimerzTitle',
       descKey: 'bimerzDesc',
-      link: 'https://bimerz.ir',
+      link: 'http://bimerz.ir',
       color: 'from-green-500 to-teal-600',
       icon: Shield,
       tech: ['Radix UI', 'TypeScript', 'Express', 'Security', 'Helmet']
+    },
+    {
+      titleKey: 'suduxTitle',
+      descKey: 'suduxDesc',
+      link: 'http://sudux.ir',
+      color: 'from-violet-500 to-blue-600',
+      icon: Swords,
+      tech: ['Radix UI', 'TypeScript', 'Axum', 'Gsap', 'Framer', 'Postgre']
     }
   ];
 

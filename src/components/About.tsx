@@ -79,6 +79,11 @@ const About: React.FC = () => {
       title: 'Bimerz.ir',
       desc: 'RadixUI, Axios, Moment, Rechart, Express, Sonner, Helmet',
     },
+    {
+            year: '2026',
+            title: 'Sudux.ir',
+            desc: 'Radix UI, TypeScript, Axum, Gsap, Framer, Postgre'
+        },
   ];
 
   return (
@@ -107,12 +112,12 @@ const About: React.FC = () => {
                 درباره من
               </h3>
               <p className={`text-lg text-gray-700 leading-relaxed mb-6 font-estedad`}>
-                من یک توسعه‌دهنده وب با ۵ سال تجربه هستم که عاشق ایجاد تجربه‌های کاربری عالی و راه‌حل‌های دیجیتال خلاقانه هستم. تخصص من در فناوری‌های مدرن وب از جمله React، Next.js، و Node.js است.
+                من یک توسعه‌دهنده وب با 6 سال تجربه هستم که عاشق ایجاد تجربه‌های کاربری عالی و راه‌حل‌های دیجیتال خلاقانه هستم. تخصص من در فناوری‌های مدرن وب از جمله React، Next.js، و Node.js است.
               </p>
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-white rounded-lg shadow-sm">
-                  <div className={`text-2xl font-bold text-blue-600 font-estedad`}><CountUp duration={5} to={5} />+</div>
+                  <div className={`text-2xl font-bold text-blue-600 font-estedad`}><CountUp duration={4} to={6} />+</div>
                   <div className={`text-sm text-gray-600 font-estedad`}>
                     سال تجربه
                   </div>

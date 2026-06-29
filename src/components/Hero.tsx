@@ -86,9 +86,9 @@ const Hero: React.FC = () => {
 
             <TextType
               text={['فرانت‌اند', 'بک‌اند']}
-              typingSpeed={150}
-              deletingSpeed={250}
-              pauseDuration={1000}
+              typingSpeed={100}
+              deletingSpeed={100}
+              pauseDuration={700}
               loop={true}
               showCursor={true}
               cursorCharacter="|"
@@ -115,7 +115,7 @@ const Hero: React.FC = () => {
           >
             <TextType
               text={[
-                '۵ سال تجربه در توسعه وب | متخصص در ساخت وب‌سایت‌های مدرن و کاربردی',
+                '6 سال تجربه در توسعه وب | متخصص در ساخت وب‌سایت‌های مدرن و کاربردی',
               ]}
               typingSpeed={60}
               deletingSpeed={50}

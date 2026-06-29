@@ -20,7 +20,7 @@ export const translations: Translation = {
     fa: 'پروژه‌ها'
   },
   h3x3dTitle: {
-    fa: 'هکس۳دی - فروشگاه محصولات پرینت سه‌بعدی'
+    fa: 'h3x3d - فروشگاه محصولات پرینت سه‌بعدی'
   },
   h3x3dDesc: {
     fa: 'فروشگاه آنلاین فروش محصولات ساخته‌شده با پرینت سه‌بعدی'
@@ -28,8 +28,14 @@ export const translations: Translation = {
   bimerzTitle: {
     fa: 'بیمرز - وب‌سایت بیمه'
   },
+  suduxTitle:{
+    fa: 'sudux'
+  },
   bimerzDesc: {
     fa: 'وب‌سایت بیمه با دسترسی از طریق bimerz.ir'
+  },
+  suduxDesc: {
+    fa: "وبسایت بازی سودوکو"
   },
   contactTitle: {
     fa: 'تماس با من'

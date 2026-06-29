@@ -5,16 +5,13 @@ const Timeline: React.FC<{ isRTL: boolean; language: string }> = ({ isRTL, langu
     const ref = useRef<HTMLDivElement>(null);
     const [isClient, setIsClient] = useState(false);
 
-    // ✅ Always call hooks first (React rule)
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ['start end', 'end start'],
+        offset: ['start end', 'end end'],
     });
 
-    // ✅ Transform value for the timeline height
-    const lineHeight = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
+    const lineHeight = useTransform(scrollYProgress, [0, 1], ['0%', '110%']);
 
-    // ✅ Then set isClient so we know when to render motion parts
     useEffect(() => {
         setIsClient(true);
     }, []);
@@ -40,6 +37,11 @@ const Timeline: React.FC<{ isRTL: boolean; language: string }> = ({ isRTL, langu
             title: 'Bimerz.ir',
             desc: 'RadixUI, Axios, Moment, Rechart, Express, Sonner, Helmet',
         },
+        {
+            year: '2026',
+            title: 'Sudux.ir',
+            desc: 'Radix UI, TypeScript, Axum, Gsap, Framer, Postgre'
+        },
     ];
 
     return (
@@ -62,7 +64,7 @@ const Timeline: React.FC<{ isRTL: boolean; language: string }> = ({ isRTL, langu
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0, scale: 1.05 }}
                         transition={{ duration: 0.8 }}
-                        viewport={{ amount: 0.3 }}
+                        viewport={{ amount: 0.1 }}
                     >
                         {/* Card */}
                         <div

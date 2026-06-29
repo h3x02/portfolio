@@ -12,7 +12,7 @@ const Skills: React.FC = () => {
     frontend: {
       icon: AppWindow,
       title: language === 'fa' ? 'فرانت‌اند' : 'Frontend',
-      skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS']
+      skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'Gsap', 'Framer-motion']
     },
     state: {
       icon: BrainCircuit,
@@ -22,12 +22,12 @@ const Skills: React.FC = () => {
     backend: {
       icon: Database,
       title: language === 'fa' ? 'بک‌اند' : 'Backend',
-      skills: ['Node.js', 'Express', 'Bun', 'SQL', 'MongoDB', 'Mongoose', 'Drizzle']
+      skills: ['Node.js', 'Express','Hono', 'Bun', 'SQL', 'MongoDB', 'Mongoose', 'Drizzle', 'SeaORM', "Rust", "Axum"]
     },
     tools: {
       icon: GitMerge,
       title: language === 'fa' ? 'ابزارها' : 'Tools',
-      skills: ['Git', 'Axios']
+      skills: ['Git', 'Axios', 'Ws', 'Docker']
     }
   }
 
